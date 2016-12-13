@@ -102,7 +102,7 @@ public class SimpleSample extends ChaincodeBase {
 		if(valA>valFrom)
 			return "{\"Error\":\"Insufficient asset holding value for requested transfer amount \"}";
 		
-		float taxamarras=1;
+		int taxamarras = 1;
 		
 		valFrom = valFrom-valA-taxamarras;
 		valTo = valTo+valA-taxamarras;
